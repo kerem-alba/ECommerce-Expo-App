@@ -15,10 +15,7 @@ export default function IntroductionScreen() {
   useEffect(() => {
     const checkToken = async () => {
       const token = await getToken();
-      console.log("Token alındı async storedan");
-      //const token = "";
       if (token == null || token == "") {
-        console.log("Home a gidiyoruz");
         navigation.navigate("Main", { screen: "Home" });
       } else {
         navigation.navigate("Login");

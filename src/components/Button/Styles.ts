@@ -1,8 +1,9 @@
 import { StyleSheet } from "react-native";
+import { PRIMARY_COLOR, TEXT_COLOR } from "../../utils/colors";
 
 export const styles = StyleSheet.create({
   btn: {
-    margin: 10,
+    margin: 5,
     padding: 10,
     borderRadius: 10,
     shadowColor: "#000",
@@ -11,14 +12,13 @@ export const styles = StyleSheet.create({
       height: 2,
     },
     shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-
+    shadowRadius: 4,
     elevation: 5,
   },
   btn_text: {
-    color: "white",
-    textAlign: "center",
-    fontWeight: "bold",
+    color: TEXT_COLOR,
+    fontFamily: "HostGrotesk-Bold",
     fontSize: 16,
+    textAlign: "center",
   },
 });

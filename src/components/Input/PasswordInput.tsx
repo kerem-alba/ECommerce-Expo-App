@@ -27,7 +27,6 @@ export default function PasswordInput(props: Props) {
           placeholder={props.placeholder || props.labelText}
           secureTextEntry={secureTextEntry}
         ></TextInput>
-
         <Pressable onPress={updateSecureTextEntry}>
           <Feather name={secureTextEntry ? "eye-off" : "eye"} size={24} color="black" />
         </Pressable>

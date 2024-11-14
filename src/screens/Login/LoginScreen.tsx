@@ -1,4 +1,4 @@
-import { View, Text, TextInput } from "react-native";
+import { View, Text, TextInput, Image } from "react-native";
 import React, { useEffect, useState } from "react";
 import Button from "../../components/Button/Button";
 import Input from "../../components/Input/Input";
@@ -54,6 +54,7 @@ export default function LoginScreen() {
       >
         {({ handleChange, handleSubmit, values, isValid }) => (
           <>
+            <Image source={require("../../../assets/logo.jpg")} style={styles.logo} />
             <Input
               labelText="Email"
               placeholder="Please enter your email address"
@@ -62,7 +63,7 @@ export default function LoginScreen() {
               errorText="Email is required"
             />
             <PasswordInput labelText="Password" value={values.password} onChangeText={handleChange("password")} errorText="Password is required" />
-            <Button onPress={handleSubmit} text="Giris Yap" disabled={!isValid} />
+            <Button onPress={handleSubmit} text="Login" disabled={!isValid} />
           </>
         )}
       </Formik>

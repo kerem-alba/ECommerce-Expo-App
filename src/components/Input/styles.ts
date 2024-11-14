@@ -1,9 +1,10 @@
 import { StyleSheet } from "react-native";
+import { BACKGROUND_COLOR, PRIMARY_COLOR, SECONDARY_COLOR, TEXT_LIGHT } from "../../utils/colors";
 
 export const styles = StyleSheet.create({
   input: {
     padding: 10,
-    backgroundColor: "white",
+    backgroundColor: SECONDARY_COLOR,
     flexGrow: 1,
   },
   input_container: {
@@ -11,11 +12,11 @@ export const styles = StyleSheet.create({
     padding: 10,
     marginHorizontal: 10,
     borderRadius: 10,
-    backgroundColor: "rgb(237, 241, 255)",
+    backgroundColor: "lightgray",
   },
   password_container: {
     flexDirection: "row",
-    backgroundColor: "white",
+    backgroundColor: SECONDARY_COLOR,
     alignItems: "center",
     paddingRight: 10,
   },

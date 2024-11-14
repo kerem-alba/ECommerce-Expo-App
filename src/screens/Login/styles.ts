@@ -1,26 +1,16 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+import { BACKGROUND_COLOR, SECONDARY_COLOR } from "../../utils/colors";
+
+const width = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "white",
-  },
-  input: {
-    padding: 10,
-    backgroundColor: "white",
-  },
-  input_container: {
-    marginBottom: 8,
-    padding: 10,
-    marginHorizontal: 10,
-    borderRadius: 10,
-    backgroundColor: "rgb(237, 241, 255)",
-  },
-  logo_container: {
-    alignItems: "center",
+    backgroundColor: SECONDARY_COLOR,
   },
   logo: {
-    height: 200,
-    width: 200,
+    width: width,
+    height: 300,
+    alignSelf: "center",
   },
 });
