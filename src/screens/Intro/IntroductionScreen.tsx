@@ -16,9 +16,11 @@ export default function IntroductionScreen() {
     const checkToken = async () => {
       const token = await getToken();
       if (token == null || token == "") {
-        navigation.navigate("Main", { screen: "Home" });
-      } else {
+        console.log("token empty");
         navigation.navigate("Login");
+      } else {
+        navigation.navigate("Main", { screen: "Home" });
+        console.log("token found:", token);
       }
     };
 

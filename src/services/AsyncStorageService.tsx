@@ -11,6 +11,7 @@ export const getToken = async () => {
   const token = await AsyncStorage.getItem("token");
   if (token) {
     header.token = token;
+    console.log("token set to header in global state");
     return token;
   }
   return "";
@@ -19,4 +20,5 @@ export const getToken = async () => {
 export const removeToken = async () => {
   await AsyncStorage.removeItem("token");
   header.token = "";
+  console.log("token removed");
 };

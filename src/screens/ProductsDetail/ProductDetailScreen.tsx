@@ -8,6 +8,7 @@ import { useCartStore } from "../../stores/cartStore";
 import CustomHeader from "../../components/Header/CustomHeader";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./styles";
+import { header } from "../../utils/constants";
 
 const { width } = Dimensions.get("window");
 
